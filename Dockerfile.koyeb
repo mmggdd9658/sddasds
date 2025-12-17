@@ -1,0 +1,7 @@
+FROM koyeb/docker-compose
+
+WORKDIR /app
+COPY . /app
+
+# 启动 docker-compose
+CMD ["docker-compose", "up", "--build"]
